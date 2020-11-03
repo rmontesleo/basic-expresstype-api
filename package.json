@@ -1,0 +1,29 @@
+{
+  "name": "basic-ms-test-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "buildrun": "npm run build && npm run start",
+    "devjs": "nodemon -e ts  --exec \"npm run buildrun  \" ",
+    "devts": "tsc-watch --onSuccess \" npm run start \" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.27",
+    "nodemon": "^2.0.4",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^3.9.7"
+  }
+}
